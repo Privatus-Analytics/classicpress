@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        php: ["7.4", "8.1", "8.3", "8.4"]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          coverage: none
+      - name: PHP syntax
+        run: find privatus-analytics -name '*.php' -print0 | xargs -0 -n1 php -l
+
+  phpcs:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.3"
+          tools: composer:v2
+          coverage: none
+      - name: Install WordPress Coding Standards
+        run: |
+          mkdir -p "$RUNNER_TEMP/phpcs"
+          cd "$RUNNER_TEMP/phpcs"
+          composer config -g allow-plugins.dealerdirect/phpcodesniffer-composer-installer true
+          composer require --dev --no-interaction --no-progress wp-coding-standards/wpcs:^3 phpcompatibility/phpcompatibility-wp:"*"
+      - name: PHP_CodeSniffer (WordPress-Extra, WordPress-Docs, PHP 7.4+ compatibility)
+        run: '"$RUNNER_TEMP/phpcs/vendor/bin/phpcs"'
+
+  zip:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - name: Build the ClassicPress directory zip
+        run: ./build-zip.sh

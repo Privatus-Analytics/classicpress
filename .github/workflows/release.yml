@@ -1,0 +1,25 @@
+name: Release zip
+
+# Builds privatus-analytics-vX.Y.Z.zip (folder privatus-analytics/ inside) and
+# attaches it to the GitHub release. The ClassicPress directory only accepts a
+# download link of the form
+# https://github.com/Privatus-Analytics/classicpress/releases/download/vX.Y.Z/privatus-analytics-vX.Y.Z.zip
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  zip:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - name: Build the zip
+        run: ./build-zip.sh "${{ github.event.release.tag_name }}"
+      - name: Attach it to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "${{ github.event.release.tag_name }}" "build/privatus-analytics-${{ github.event.release.tag_name }}.zip" --clobber

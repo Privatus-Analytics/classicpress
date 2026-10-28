@@ -1,0 +1,298 @@
+# Copyright (C) 2026 Privatus Analytics
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Privatus Analytics 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/Privatus-Analytics/classicpress/issues\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-28T02:24:47+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: privatus-analytics\n"
+
+#. Plugin Name of the plugin
+#. Author of the plugin
+#: privatus-analytics.php
+#: includes/class-privatus-analytics-dashboard-widget.php:50
+#: includes/class-privatus-analytics-privacy.php:36
+#: includes/class-privatus-analytics-settings.php:89
+#: includes/class-privatus-analytics-settings.php:90
+msgid "Privatus Analytics"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: privatus-analytics.php
+msgid "https://github.com/Privatus-Analytics/classicpress"
+msgstr ""
+
+#. Description of the plugin
+#: privatus-analytics.php
+msgid "Simple, private website analytics for ClassicPress. No cookies, no IP addresses stored, bots left out of your numbers."
+msgstr ""
+
+#. Author URI of the plugin
+#: privatus-analytics.php
+msgid "https://privatusanalytics.com"
+msgstr ""
+
+#: includes/class-privatus-analytics-dashboard-widget.php:61
+msgid "Your visits, sources, pages and conversions are counted without cookies. Open your Privatus Analytics dashboard to see the reports."
+msgstr ""
+
+#: includes/class-privatus-analytics-dashboard-widget.php:65
+msgid "Open dashboard"
+msgstr ""
+
+#: includes/class-privatus-analytics-dashboard-widget.php:67
+msgid "Plugin settings"
+msgstr ""
+
+#: includes/class-privatus-analytics-optout.php:43
+msgid "Opt out of anonymous analytics"
+msgstr ""
+
+#: includes/class-privatus-analytics-optout.php:44
+msgid "Opt back in to anonymous analytics"
+msgstr ""
+
+#: includes/class-privatus-analytics-optout.php:45
+msgid "You are opted out. This browser will not be counted."
+msgstr ""
+
+#: includes/class-privatus-analytics-optout.php:46
+msgid "This site counts visits anonymously, without cookies."
+msgstr ""
+
+#: includes/class-privatus-analytics-optout.php:63
+msgid "JavaScript is disabled, so this browser is not counted."
+msgstr ""
+
+#: includes/class-privatus-analytics-privacy.php:50
+msgid "Analytics"
+msgstr ""
+
+#: includes/class-privatus-analytics-privacy.php:51
+msgid "Suggested text, added by the Privatus Analytics plugin. Change it to match your site."
+msgstr ""
+
+#: includes/class-privatus-analytics-privacy.php:52
+msgid "Suggested text:"
+msgstr ""
+
+#. translators: %s: the name "Privatus Analytics", linked to the page that explains how it handles privacy.
+#: includes/class-privatus-analytics-privacy.php:55
+#, php-format
+msgid "We use %s to count visits to this site and to see which pages people read. It does not use cookies. It does not follow you from one website to another, or from one day to the next."
+msgstr ""
+
+#: includes/class-privatus-analytics-privacy.php:58
+msgid "For each page you open, we record the page address, the website that sent you here, your language, your country, your type of browser and device, and the rough size of your screen."
+msgstr ""
+
+#: includes/class-privatus-analytics-privacy.php:59
+msgid "Your country comes from a country code that Cloudflare adds to each visit. Cloudflare is the network company that passes the visits on to Privatus Analytics. Privatus Analytics does not look up where you are, and it keeps nothing more exact than the country."
+msgstr ""
+
+#: includes/class-privatus-analytics-privacy.php:60
+msgid "Your IP address is the number that lets the internet reach your device. Your IP address and your browser details are used for a moment, in memory only. They are mixed with a random value that changes every day. This lets us count each visitor once a day without knowing who they are. They also help to spot robots. Your IP address and browser details are never stored."
+msgstr ""
+
+#: includes/class-privatus-analytics-privacy.php:61
+msgid "Privatus Analytics keeps the data in the United States."
+msgstr ""
+
+#: includes/class-privatus-analytics-privacy.php:62
+msgid "Keep the next paragraph only if you turned on WooCommerce purchase tracking in Settings, Privatus Analytics."
+msgstr ""
+
+#: includes/class-privatus-analytics-privacy.php:63
+msgid "When you buy something in our shop, we record the total price, the currency, the number of items and whether a coupon was used. We never send your name, email address, postal address or order number."
+msgstr ""
+
+#: includes/class-privatus-analytics-privacy.php:64
+msgid "Keep the next paragraph only if you added the [privatus_optout] button to your site."
+msgstr ""
+
+#: includes/class-privatus-analytics-privacy.php:65
+msgid "You can ask us not to count your visits. Use the button on this site to do this. Your browser then keeps one small note for this site, called privatus_optout. It only says that you do not want to be counted. It is kept in your browser's local storage, not in a cookie. This note is the only thing Privatus Analytics ever stores on your device. It works only in the browser where you clicked the button. If you clear this site's data in your browser, the note is gone and your visits are counted again."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:105
+msgid "Settings"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:124
+msgid "Tracking"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:125
+msgid "Script options"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:126
+msgid "Exclusions"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:127
+msgid "WooCommerce"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:128
+msgid "Dashboard card"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:131
+msgid "Site ID"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:131
+msgid "Your public site id, e.g. pa_AbC123. Find it in your Privatus Analytics dashboard under Site settings, then Setup."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:132
+msgid "Script host"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:132
+msgid "The address that serves the tracking script. Keep the default unless you host your own copy."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:133
+msgid "SPA mode"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:133
+msgid "How client-side navigations are detected."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:134
+msgid "Manual pageviews"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:134
+msgid "Turn off the automatic pageview. You then call privatus.pageview() yourself."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:135
+msgid "Modules"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:135
+msgid "engage = time on page and scroll depth. auto = outbound links, downloads and forms. vitals = Core Web Vitals. clicks = click maps. ask = on-site surveys."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:136
+msgid "Allowed domains"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:136
+msgid "Comma-separated hostnames. Visits on other hostnames, such as a staging site, are ignored."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:137
+msgid "Use canonical URL"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:137
+msgid "Record the rel=canonical URL instead of the address bar."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:138
+msgid "Hash routing"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:138
+msgid "Treat #fragments as separate pages."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:139
+msgid "Extra query parameters"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:139
+msgid "Comma-separated query parameters to keep (UTM parameters are always kept)."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:140
+msgid "Excluded paths"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:140
+msgid "Comma-separated globs never tracked."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:141
+msgid "Path masks"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:141
+msgid "Comma-separated glob->replacement rules. WooCommerce order paths are masked automatically."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:142
+msgid "Do not track logged-in users with role"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:142
+msgid "Hold Ctrl/Cmd to select several roles."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:143
+msgid "Track purchases"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:143
+msgid "Record a purchase event (revenue, currency, item count, coupon used) in the visitor's browser on the thank-you page. It respects the visitor opt-out."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:144
+msgid "Dashboard link"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:144
+msgid "An https:// link to your Privatus Analytics dashboard or a shared dashboard link. The admin dashboard shows a card with a button that opens it."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:145
+msgid "Card visible to"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:145
+msgid "Users need this capability to see the card."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:170
+msgid "Privatus Analytics uses no cookies and stores nothing on visitors' devices."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:173
+msgid "Once you save a site id, visitors' browsers load a script from the Privatus Analytics service and send it anonymous page view data. Nothing is sent before that."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:175
+msgid "Terms of service"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:177
+msgid "Privacy policy"
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:186
+msgid "WooCommerce is not active. These settings take effect once it is."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:188
+msgid "No order ids, emails, names or addresses are ever sent."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:318
+msgid "The site id must look like pa_XXXX."
+msgstr ""
+
+#: includes/class-privatus-analytics-settings.php:346
+msgid "The dashboard link must be an https:// URL."
+msgstr ""

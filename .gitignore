@@ -1,0 +1,15 @@
+*.zip
+vendor/
+composer.lock
+composer.json
+.phpcs-cache
+node_modules/
+.DS_Store
+build/
+.secrets/
+.env
+.env.local
+coverage/
+SUBMISSION*.md
+REVIEW-REPLY.md
+privatus-analytics/README.md
